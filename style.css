@@ -1,0 +1,189 @@
+:root{
+    --orang : hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%) ;
+    --Light-Grey: hsl(217, 12%, 63%); 
+    --Medium-Grey: hsl(216, 12%, 54%); 
+    --Dark-Blue: hsl(213, 19%, 18%); 
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    color: var(--White);
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    font-size: 15px;
+    color: var(--Medium-Grey);
+    line-height: 1.7;
+}
+h2{
+    padding-bottom: 15px;
+    color: var(--White);
+}
+
+body{
+    background-color: var(--Very-Dark-Blue);
+    font-family: 'Overpass',sans-serif;
+}
+.contener{
+    position: relative;
+}
+.contener .box{
+    border-radius: 30px 30px 30px 30px;
+    width: 400px;
+    background-image: linear-gradient(#222933,#171e28);
+    position: absolute;
+    top:50%;
+    left: 35%;
+    transform: translateY(30%);
+    -webkit-transform: translateY(30%);
+    -moz-transform: translateY(30%);
+    -ms-transform: translateY(30%);
+    -o-transform: translateY(30%);
+    -webkit-border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    -ms-border-radius: 30px 30px 30px 30px;
+    -o-border-radius: 30px 30px 30px 30px;
+}
+@media (max-width : 767px) {
+    .contener .box{
+        left: 2%;
+}
+}
+@media (max-width : 992px) {
+    .contener .box {
+        left: 2%;
+    }
+}
+.contener .box .cont{
+    padding: 40px;
+}
+.contener .box .cont .star{
+    padding-bottom: 15px;
+}
+.contener .box .cont .star img{
+    padding: 15px;
+    background-color: var(--Dark-Blue);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.contener .box .cont .ul{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 0 10px;
+
+}
+.contener .box .cont .ul .li{
+    text-align: center;
+    flex-basis: 20%;
+    
+}
+.contener .box .cont .ul .li{
+    font-weight: 700;
+    margin: 0 7px ;
+    padding: 10px;
+    background-color: var(--Dark-Blue);
+    transition: 0.7s;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+.contener .box .cont .ul .li:hover{
+    color: var(--White);
+    background-color: var(--Light-Grey);
+}
+.contener .box .cont .submit{
+    text-align: center;
+    padding: 20px;
+}
+.contener .box .cont .submit button{
+    letter-spacing: 5px;
+    font-weight: 700;
+    background-color: var(--orang);
+    border: none;
+    border-radius: 30px 30px 30px 30px;
+    width: 100%;
+    padding: 15px 0;
+    color: var(--White);
+    transition: 0.3s;
+    -webkit-border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    -ms-border-radius: 30px 30px 30px 30px;
+    -o-border-radius: 30px 30px 30px 30px;
+}
+.contener .box .cont .submit button:hover{
+    background-color: var(--White);
+    color: var(--orang);
+}
+
+.contener .box1 {
+    border-radius: 30px 30px 30px 30px;
+    width: 400px;
+    background-image: linear-gradient(#222933, #171e28);
+    position: absolute;
+    top:50%;
+    left: 35%;
+    transform: translateY(30%);
+    -webkit-transform: translateY(30%);
+    -moz-transform: translateY(30%);
+    -ms-transform: translateY(30%);
+    -o-transform: translateY(30%);
+    -webkit-border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    -ms-border-radius: 30px 30px 30px 30px;
+    -o-border-radius: 30px 30px 30px 30px;
+}
+@media (max-width : 767px) {
+    .contener .box1 {
+        left: 2%;
+    }
+}
+@media (max-width : 992px) {
+    .contener .box1{
+        left: 2%;
+    }
+}
+.contener .box1 .cont1 {
+    text-align: center;
+    padding: 40px;
+}
+.contener .box1 .cont1 .selection{
+    padding: 40px 0;
+}
+.contener .box1 .cont1 .selection .c{
+    padding: 5px;
+    width: 60%;
+    margin: auto;
+    color: var(--orang);
+    background-color: var(--Dark-Blue);
+    border-radius: 30px 30px 30px 30px;
+    -webkit-border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    -ms-border-radius: 30px 30px 30px 30px;
+    -o-border-radius: 30px 30px 30px 30px;
+}
+.active{
+    background-color: var(--orang);
+}
+.none{
+    display: none;
+}
